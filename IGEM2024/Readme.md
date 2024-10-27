@@ -1,6 +1,6 @@
-# Enhance The Synthesis of SCFAs & GLP-1 to Regulates Glycolipid Metabolism LZU-MEDICINE-CHINA_2023
+# Enhance The Synthesis of SCFAs & GLP-1 to Regulates Glycolipid Metabolism LZU-MEDICINE-CHINA
 
-The mathematical modeling of Intelligent cholesterol management system. Team: LZU-MEDICINE-CHINA 2023
+The mathematical modeling of Intelligent cholesterol management system. Team: LZU-MEDICINE-CHINA 
 
 Details please refer to our Team [[wiki]](https://2024.igem.wiki/lzu-medicine-china/). 
 
