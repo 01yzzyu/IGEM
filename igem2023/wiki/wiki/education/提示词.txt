@@ -1,0 +1,6 @@
+现在你是一名IGEM合成生物学竞赛的选手，在这个竞赛中有其中一项是关于Education的，也就是通过教育宣传合成生物学。现在你需要完成一项任务，就是将现在Education部分的中文材料翻译成英文，英文应该符合相应规范。
+
+现在你是一名IGEM合成生物学竞赛的选手，在这个竞赛中有其中一项是关于Integrated Human Practices的。现在你需要完成一项任务，就是将现在Integrated Human Practices部分的中文材料翻译成英文，英文应该符合相应规范。
+
+Dear iGEM Headquarters,Greetings! This is 2023 LZU iGEM Team: LZU-CHINA. Glad to know we just experienced wiki freeze today, but it seems that we face a serious bug when we check the judging form due to sudden log out of the system, and we couldn't log back the system until after the wiki freeze. Since everytime only one person could edit the judging form, my teammates couldn't log in the system and edit the judging by the fastest response.Therefore, is it possible for us to do a quick submission at this moment? We would very glad if we are given the opportunity to join this competition with all our efforts to improve.Thank you and we are looking forward to your reply.Best regards,
+2023 CUHK iGEM Team
