@@ -1,0 +1,88 @@
+\documentclass[UTF8]{article}
+\usepackage[margin=1in]{geometry} % 设置边距，符合Word设定
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{tabularx}
+
+\title{Appendix B. Parameters}
+\author{LZU-CHINA}
+\date{\today}
+\begin{document}
+    \maketitle
+    \begin{abstract}
+       This appendix presents and processes the data of the fluorescence protein intensity $F$ and cell density mentioned in the aforementioned model. In fact, we added the fluorescence protein gene after the oleic acid inducer operator fadO. When FadR binds with the operator fadO, it leads to the activation of the oleic acid inducer, causing the expression of the fluorescence protein gene. Thus, we can detect the corresponding data.
+       
+       We tested Raw Fluorescence Intensity and OD600 (Optical Density at 600 nm) in three scenarios of oleic acid concentrations: 5\%, 10\%, and 15\%, under both aerobic and anaerobic conditions. For each type, we conducted six sets of data. Subsequently, we organized and preprocessed the respective experimental data to aid in subsequent parameter estimation.
+    \end{abstract}
+
+
+
+\section{Parameters}
+
+% 写一些语言描述，把下面的部分改一改，不要和论文中完全一样。跟我们用的记号保持一致
+
+$$
+\footnotesize
+\begin{array}{|c|c|c|c|c|}
+	\hline \text { Parameter description } & \text { Term } & \text { Value } & \text { Units } & \text { Reference } \\
+    \hline \text { Forward sequestration } & k_{\mathrm{f}} & 612.55 & \mu \mathrm{M}^{-2} \cdot \mathrm{h}^{-1} & {[2]} \\
+	\hline \text { Reverse sequestration } & k_{\mathrm{r}} & 900.73 & \mathrm{~h}^{-1} & {[2]} \\
+
+ 	\hline \text { PlsB turnover rate } & k_{\text {cat }, \mathrm{B}} & 192.91 & h^{-1} & \text { [2] } \\
+    \hline \text { FadD turnover rate } & k_{\text {cat }, \mathrm{D}} & 49 & h^{-1} & \text { [2] } \\
+    \hline \text { FadR’strength to promote itself(NAR) } & a_{\mathrm{R}} & 0.0131 & \mu \mathrm{M} \cdot \mathrm{h}^{-1} & \text { [2] } \\
+	\hline \text { FadR leaky expression (NAR) } & b_{\mathrm{R}} & 0.0007 & \mu \mathrm{M} \cdot \mathrm{h}^{-1} & {[2]} \\
+     \hline \text { FadD’strength to promote itself } & a_{\mathrm{D}} & 0.0517 & \mu \mathrm{M} \cdot \mathrm{h}^{-1} & {[2]} \\
+
+	\hline \text { FadD leaky expression } & b_{\mathrm{D}} & 0.0108 & \mu \mathrm{M} \cdot \mathrm{h}^{-1} & \text { [2] } \\
+
+	\hline \begin{array}{l}
+		\text { FadR affinity to promote itself } \\
+		\text { (NAR) }
+	\end{array} & K_{\mathrm{R}} & 4.3222 & \mu \mathrm{M}^{-1} & {[2]} \\
+
+	\hline \text { FadR affinity to fadD} & K_{\mathrm{D}} & 305.95 & \mu \mathrm{M}^{-1} & \text { [2] } \\
+     \hline \text { Michaelis constant } & K_{\mathrm{m}, \mathrm{B}} & 45429 & \mu \mathrm{M} & \text { [2] } \\
+	\hline \text { Michaelis constant } & K_{\mathrm{m}, \mathrm{D}} & 0.0672 & \mu \mathrm{M} & \text { [2] } \\
+	\hline \text { PlsB concentration } & B & 0.1369 & \mu \mathrm{M} & {[2]} \\
+	\hline \text { Cell growth parameter } & \lambda_{\max } & 0.1818 & \mathrm{~h}^{-1} & {[2], \text { E. coli } \mathrm{DH} 1 \Delta \text { fadE strain. }} \\
+     \hline E_{\mathrm{g}} \text { promoter strength } & a_{\mathrm{g}} & \lambda_{\max } & \mu \mathrm{M} \cdot \mathrm{h}^{-1} & \text { In order to ensure full express at } \lambda_{\max } \text {. } \\
+	\hline \text { FadR’strength to promote itself(PAR) } & a_{\mathrm{R}} & 0.0131^{\dagger} & \mu \mathrm{M} \cdot \mathrm{h}^{-1} & \text { Suppose that the parameters of FadR with NAR are same. } \\
+     \hline \text { FadR leaky expression (PAR) } & b_{\mathrm{R}} & 0.0007^{\dagger} & \mu \mathrm{M} \cdot \mathrm{h}^{-1} & \text { Suppose that the parameters of FadR with NAR are same.  } \\
+    \hline \text { Decrease paramameter in growth } & s_{\mathrm{T}} & 0.7 & - & \text { Determined by pgi down-regulation.} \\
+	\hline \begin{array}{l}
+		\text { FadR affinity to own promoter } \\
+		\text { (PAR) }
+	\end{array} & K_{\mathrm{R}} & \begin{array}{l}
+		4.3222^{\dagger} \\
+		\times 7
+	\end{array} & \mu \mathrm{M}^{-1} & \begin{array}{l}
+		\text { Suppose that the parameters of FadR} \\
+		\text { with PAR are same. It is same as system} \\
+		\text { with NAR before induction }(\mathrm{OA}=0 \mu \mathrm{M}) \\
+        \text {when steady state FadR approx except scaled. }
+	\end{array} \\
+	\hline \text { FadR affinity to } E_{\mathrm{g}} \text { promoter } & K_{\mathrm{g}} & \begin{array}{l}
+		=K_{\mathrm{R}}= \\
+		4.9114
+	\end{array} & \mu \mathrm{M}^{-1} & \begin{array}{l}
+		\text { Suppose designed same promoter as} \\
+		\text { fadR with PAR,for FadR activated expression. }
+	\end{array} \\
+	\hline \begin{array}{l}
+		\text { Affinity of FadR for prod synthesis } \\
+		\text { enzyme } E_{\mathrm{p}}
+	\end{array} & K_{\mathrm{p}} & \begin{array}{l}
+		=K_{\mathrm{D}}= \\
+		305.95
+	\end{array} & \mu \mathrm{M} \cdot \mathrm{h}^{-1} & \begin{array}{l}
+		\text { Suppose designed with FadR operator} \\
+		\text { site from fadD promoter. }
+	\end{array} \\
+	\hline
+\end{array}
+$$
+
+
+\end{document}s s s s s s s
